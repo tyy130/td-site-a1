@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Header background on scroll
     const header = document.querySelector('.header');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -62,8 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.backgroundColor = 'rgba(250, 250, 250, 0.95)';
             header.style.boxShadow = 'none';
         }
-
-        lastScroll = currentScroll;
     });
 
     // Video fallback - create subtle gradient if video fails
